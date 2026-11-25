@@ -1,0 +1,11 @@
+# The repository currently contains only static files (no package.json),
+# so there is nothing to build. This overrides the "npm run build" / "dist"
+# settings from the Netlify UI and publishes the repo root as-is.
+#
+# If you later push a Node/Vite app (e.g. the AI Studio export with a
+# package.json), change this to:
+#   command = "npm run build"
+#   publish = "dist"
+[build]
+  command = ""
+  publish = "."
