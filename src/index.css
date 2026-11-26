@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-lavender: #947ABD;
+  --color-lavender-deep: #7B5FA8;
+  --color-lavender-light: #F2ECF8;
+  --color-charcoal: #28232D;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #28232D;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+/* Signature 360 Café repeating circular motif background */
+.bg-circles-lavender {
+  background-color: #947ABD;
+  background-image: radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.08) 10px, transparent 10.5px),
+    radial-gradient(circle at 60px 60px, rgba(255, 255, 255, 0.06) 16px, transparent 16.5px);
+  background-size: 80px 80px;
+}
+
+.bg-circles-soft {
+  background-color: #F2ECF8;
+  background-image: radial-gradient(circle at 24px 24px, rgba(148, 122, 189, 0.09) 12px, transparent 12.5px);
+  background-size: 48px 48px;
+}
+
+/* Dotted horizontal separator matching 360 Café branding */
+.divider-dotted {
+  border-top: 2px dotted rgba(148, 122, 189, 0.45);
+}
+
+.divider-dotted-white {
+  border-top: 2px dotted rgba(255, 255, 255, 0.45);
+}
+
+/* Hide scrollbars cleanly for horizontal category rails */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "360 Café",
+  "description": "Upgrade your mood. Official digital menu, online ordering, interactive Google Maps location, and real-time restaurant administration dashboard for 360 Café.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
