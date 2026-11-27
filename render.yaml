@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: 360cafe
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_URL
+        sync: false
+      - key: VITE_SUPABASE_PUBLISHABLE_KEY
+        sync: false
+      - key: VITE_GOOGLE_MAPS_API_KEY
+        sync: false

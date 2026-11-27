@@ -39,7 +39,7 @@ import {
   verifyAccessToken,
 } from './src/middleware/auth.ts';
 
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 const ALLOWED_STATUSES = new Set([
   'New',
   'Confirmed',
